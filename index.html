@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadgetGuard - Chargers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">GadgetGuard</div>
+    <ul>
+      <li>Chargers</li>
+      <li>Earphones</li>
+      <li>Cases</li>
+      <li>Premium Picks</li>
+    </ul>
+    <div class="profile">👤</div>
+  </div>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    Seasonal savings are here! Shop our bestsellers before they are gone.
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Chargers</h2>
+      <div class="filter-section">
+        <h4>Price</h4>
+        <input type="range" id="priceRange" min="0" max="200" value="50">
+        <p>Max: $<span id="priceValue">50</span></p>
+      </div>
+      <div class="filter-section">
+        <h4>Stock</h4>
+        <select id="stockFilter">
+          <option>Select an option</option>
+          <option>In Stock</option>
+          <option>Out of Stock</option>
+        </select>
+      </div>
+      <div class="filter-section">
+        <h4>Collections</h4>
+        <label><input type="checkbox"> Everyday Use</label>
+        <label><input type="checkbox"> Premium Picks</label>
+        <label><input type="checkbox"> Travel Essentials</label>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+      <div class="card">
+        <span class="sale-badge">Sale!</span>
+        <img src="https://i.ibb.co/7QjrBvJ/wall-adapter.jpg" alt="Wall Adapter">
+        <div class="card-content">
+          <h3>Fast Charging Wall Adapter</h3>
+          <div class="price"><del>$19.99</del> $14.99</div>
+          <div class="add-cart">Add to cart</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="sale-badge">Sale!</span>
+        <img src="https://i.ibb.co/3Wd4RL4/power-bank.jpg" alt="Power Bank">
+        <div class="card-content">
+          <h3>Portable Power Bank 10000mAh</h3>
+          <div class="price"><del>$29.99</del> $22.99</div>
+          <div class="add-cart">Add to cart</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.ibb.co/VB6cv2V/charger-cable.jpg" alt="USB-C Cable">
+        <div class="card-content">
+          <h3>USB-C Fast Charger Cable</h3>
+          <div class="price">$14.99</div>
+          <div class="add-cart">Add to cart</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-sections">
+      <div class="footer-col">
+        <h4>Shop Categories</h4>
+        <ul>
+          <li>Chargers</li>
+          <li>Earphones</li>
+          <li>Cases</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li>Travel Essentials</li>
+          <li>Everyday Use</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li>Premium Picks</li>
+        </ul>
+      </div>
+      <div class="footer-col newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for the latest deals and updates.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2024 GadgetGuard. All rights reserved. | Terms and Conditions | Privacy Policy | Refund and Return Policy | Shipping Policy
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
