@@ -3,161 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Furni - Modern Interior Design</title>
+  <title>Light Navbar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">Furni.</div>
-    <ul class="menu">
-      <li class="active">Home</li>
-      <li>Shop</li>
-      <li>About us</li>
-      <li>Services</li>
-      <li>Blog</li>
-      <li>Contact us</li>
+  <nav class="navbar">
+    <a href="#" class="logo">MyBrand</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-    <div class="icons">🛒 👤</div>
-  </header>
+    <span class="menu-btn" id="menuBtn">&#9776;</span>
+  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Modern Interior<br>Design Studio</h1>
-      <p>Donec vitae odio quis nisi dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-      <div class="hero-buttons">
-        <button class="btn primary">Shop Now</button>
-        <button class="btn secondary">Explore</button>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="https://i.ibb.co/2dLWtMg/sofa.png" alt="sofa">
-    </div>
-  </section>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
 
-  <!-- PRODUCTS -->
-  <section class="products">
-    <h2>Crafted with excellent material.</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://i.ibb.co/3fKxks7/chair1.png" alt="chair">
-        <h3>Nordic Chair</h3>
-        <p>$50.00</p>
-      </div>
-      <div class="product">
-        <img src="https://i.ibb.co/YWwL4PN/chair2.png" alt="chair">
-        <h3>Kruzo Aero Chair</h3>
-        <p>$78.00</p>
-      </div>
-      <div class="product">
-        <img src="https://i.ibb.co/jzGQ4LB/chair3.png" alt="chair">
-        <h3>Ergonomic Chair</h3>
-        <p>$43.00</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="features">
-    <h2>Why Choose Us</h2>
-    <div class="features-grid">
-      <div class="feature">
-        🚚 <h4>Fast & Free Shipping</h4>
-        <p>Donec vitae odio quis nisi dapibus malesuada.</p>
-      </div>
-      <div class="feature">
-        🛒 <h4>Easy to Shop</h4>
-        <p>Donec vitae odio quis nisi dapibus malesuada.</p>
-      </div>
-      <div class="feature">
-        📞 <h4>24/7 Support</h4>
-        <p>Donec vitae odio quis nisi dapibus malesuada.</p>
-      </div>
-      <div class="feature">
-        🔄 <h4>Hassle Free Returns</h4>
-        <p>Donec vitae odio quis nisi dapibus malesuada.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY + TEXT -->
-  <section class="gallery-text">
-    <div class="gallery">
-      <img src="https://i.ibb.co/1sP4J7B/interior1.jpg" alt="room">
-      <img src="https://i.ibb.co/sjB6F3S/interior2.jpg" alt="room">
-      <img src="https://i.ibb.co/1YhGsP4/interior3.jpg" alt="room">
-    </div>
-    <div class="text">
-      <h2>We Help You Make Modern Interior Design</h2>
-      <p>Donec vitae odio quis nisi dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-      <button class="btn secondary">Explore</button>
-    </div>
-  </section>
-
-  <!-- TESTIMONIAL -->
-  <section class="testimonial">
-    <h2>Testimonials</h2>
-    <blockquote>
-      “Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisi dapibus malesuada. Nullam ac aliquet velit.”
-    </blockquote>
-    <div class="author">
-      <img src="https://i.ibb.co/4JrTrt0/avatar.png" alt="avatar">
-      <p><strong>Maria Jones</strong><br>CEO, Co-Founder, XYZ Inc.</p>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section class="blog">
-    <h2>Recent Blog</h2>
-    <div class="blog-grid">
-      <div class="blog-post">
-        <img src="https://i.ibb.co/tqQh4mX/blog1.jpg" alt="blog">
-        <h4>First Time Home Owner Ideas</h4>
-        <p>by Kristin Watson on Dec 19, 2021</p>
-      </div>
-      <div class="blog-post">
-        <img src="https://i.ibb.co/k1cLP9k/blog2.jpg" alt="blog">
-        <h4>How To Keep Your Furniture Clean</h4>
-        <p>by Robert Fox on Dec 15, 2021</p>
-      </div>
-      <div class="blog-post">
-        <img src="https://i.ibb.co/47sTZRq/blog3.jpg" alt="blog">
-        <h4>Small Space Furniture Apartment Ideas</h4>
-        <p>by Kristin Watson on Dec 12, 2021</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="newsletter">
-      <input type="email" placeholder="Enter your email">
-      <button>Subscribe</button>
-    </div>
-    <div class="footer-links">
-      <div>
-        <h4>About</h4>
-        <ul>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <ul>
-          <li>FAQ</li>
-          <li>Live Chat</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </div>
-    </div>
-    <p class="copyright">© 2025 Furni. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
