@@ -3,38 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Hero</title>
+  <title>Phone Accessories | MyBrand</title>
   <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar">
     <a href="#" class="logo">MyBrand</a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
+    <ul class="nav-links">
+      <li><a href="#">Chargers</a></li>
+      <li><a href="#">Earphones</a></li>
+      <li><a href="#">Cases</a></li>
+      <li><a href="#">Cables</a></li>
+      <li><a href="#">Premium Picks</a></li>
     </ul>
-    <span class="menu-btn" id="menuBtn">&#9776;</span>
+    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Welcome to MyBrand</h1>
-      <p>Your tagline or subtitle goes here</p>
+      <h1>Top Quality Phone Accessories</h1>
+      <p>Chargers, Earphones, Cases & More at Great Prices!</p>
+      <a href="#shop" class="hero-btn">Shop Now</a>
     </div>
   </section>
 
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
+  <!-- Shop -->
+  <!-- Shop -->
+<section class="shop-container" id="shop">
+  <h2 class="section-title">Featured Products</h2>
+  <div class="products">
+    
+    <!-- Charger -->
+    <div class="product-card">
+      <span class="badge">Hot</span>
+      <img src="https://picsum.photos/400/250?charger" alt="Fast Charger">
+      <h4>20W Fast Charger</h4>
+      <p class="description">Compact and powerful 20W fast charger, designed for quick and safe charging.</p>
+      <p class="price"><span class="old">$24.99</span> $18.99</p>
+      <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
 
-    menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
-  </script>
+    <!-- Earphones -->
+    <div class="product-card">
+      <span class="badge">Sale</span>
+      <img src="https://picsum.photos/400/250?earphones" alt="Wireless Earphones">
+      <h4>Wireless Earbuds Pro</h4>
+      <p class="description">High-quality earbuds with noise cancellation and long-lasting battery life.</p>
+      <p class="price"><span class="old">$59.99</span> $39.99</p>
+      <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <!-- Case -->
+    <div class="product-card">
+      <img src="https://picsum.photos/400/250?case" alt="Phone Case">
+      <h4>Shockproof Phone Case</h4>
+      <p class="description">Durable shockproof case with slim design to protect your phone from drops.</p>
+      <p class="price">$14.99</p>
+      <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <!-- Cable -->
+    <div class="product-card">
+      <img src="https://picsum.photos/400/250?cable" alt="USB-C Cable">
+      <h4>USB-C Braided Cable</h4>
+      <p class="description">Tough braided USB-C cable, supports fast charging and data transfer.</p>
+      <p class="price">$9.99</p>
+      <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h4>Shop Categories</h4>
+        <ul>
+          <li><a href="#">Chargers</a></li>
+          <li><a href="#">Earphones</a></li>
+          <li><a href="#">Cases</a></li>
+          <li><a href="#">Cables</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="#">Travel Essentials</a></li>
+          <li><a href="#">Everyday Use</a></li>
+          <li><a href="#">Premium Picks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay Updated</h4>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MyBrand. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
